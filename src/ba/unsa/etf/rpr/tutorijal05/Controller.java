@@ -83,4 +83,12 @@ public class Controller {
             ulaz.set(ulaz.get() + "8");
         }
     }
+
+    public void devet(ActionEvent actionEvent) {
+        if(ulaz.get().equals("0")) {
+            ulaz.set("9");
+        } else {
+            ulaz.set(ulaz.get() + "9");
+        }
+    }
 }
