@@ -51,4 +51,12 @@ public class Controller {
             ulaz.set(ulaz.get() + "4");
         }
     }
+
+    public void pet(ActionEvent actionEvent) {
+        if(ulaz.get().equals("0")) {
+            ulaz.set("5");
+        } else {
+            ulaz.set(ulaz.get() + "5");
+        }
+    }
 }
