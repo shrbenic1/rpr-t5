@@ -7,6 +7,10 @@ import javafx.event.ActionEvent;
 public class Controller {
 
     private SimpleStringProperty ulaz;
+    private Integer zbroj = 0;
+    private Integer razlika = 0;
+    private Integer umnzoak = 1;
+    private Integer kolicnik = 1;
 
     public Controller() {
         ulaz = new SimpleStringProperty("0");
@@ -94,5 +98,9 @@ public class Controller {
 
     public void zarez(ActionEvent actionEvent) {
         ulaz.set(ulaz.get() + ".");
+    }
+
+    public void plus(ActionEvent actionEvent) {
+        zbroj+=Integer.parseInt(ulaz.get());
     }
 }
