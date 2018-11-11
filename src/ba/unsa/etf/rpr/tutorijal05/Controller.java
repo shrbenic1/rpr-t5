@@ -43,4 +43,12 @@ public class Controller {
             ulaz.set(ulaz.get() + "3");
         }
     }
+
+    public void cetiri(ActionEvent actionEvent) {
+        if(ulaz.get().equals("0")) {
+            ulaz.set("4");
+        } else {
+            ulaz.set(ulaz.get() + "4");
+        }
+    }
 }
