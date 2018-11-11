@@ -67,4 +67,12 @@ public class Controller {
             ulaz.set(ulaz.get() + "6");
         }
     }
+
+    public void sedam(ActionEvent actionEvent) {
+        if(ulaz.get().equals("0")) {
+            ulaz.set("7");
+        } else {
+            ulaz.set(ulaz.get() + "7");
+        }
+    }
 }
