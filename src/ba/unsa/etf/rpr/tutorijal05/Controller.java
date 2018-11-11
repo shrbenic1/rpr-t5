@@ -36,5 +36,11 @@ public class Controller {
         }
     }
 
-
+    public void tri(ActionEvent actionEvent) {
+        if(ulaz.get().equals("0")) {
+            ulaz.set("3");
+        } else {
+            ulaz.set(ulaz.get() + "3");
+        }
+    }
 }
