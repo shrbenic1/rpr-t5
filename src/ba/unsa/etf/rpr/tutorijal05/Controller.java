@@ -75,4 +75,12 @@ public class Controller {
             ulaz.set(ulaz.get() + "7");
         }
     }
+
+    public void osam(ActionEvent actionEvent) {
+        if(ulaz.get().equals("0")) {
+            ulaz.set("8");
+        } else {
+            ulaz.set(ulaz.get() + "8");
+        }
+    }
 }
