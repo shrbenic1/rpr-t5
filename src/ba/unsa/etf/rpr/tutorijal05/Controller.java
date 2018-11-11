@@ -91,4 +91,8 @@ public class Controller {
             ulaz.set(ulaz.get() + "9");
         }
     }
+
+    public void zarez(ActionEvent actionEvent) {
+        ulaz.set(ulaz.get() + ".");
+    }
 }
