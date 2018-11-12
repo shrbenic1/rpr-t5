@@ -41,27 +41,27 @@
         <Button maxWidth="Infinity" mnemonicParsing="false" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
         <Button fx:id="minusBtn" maxWidth="Infinity" mnemonicParsing="false" text="-" GridPane.columnIndex="3"
                 GridPane.rowIndex="1"/>
-        <Button fx:id="btn7" maxWidth="Infinity" mnemonicParsing="false" text="7" onAction="#sedam"
+        <Button fx:id="btn7" maxWidth="Infinity" mnemonicParsing="false" text="7" onAction="#broj"
                 GridPane.columnIndex="0" GridPane.rowIndex="2"/>
-        <Button fx:id="btn8" maxWidth="Infinity" mnemonicParsing="false" text="8" onAction="#osam"
+        <Button fx:id="btn8" maxWidth="Infinity" mnemonicParsing="false" text="8" onAction="#broj"
                 GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-        <Button fx:id="btn9" maxWidth="Infinity" mnemonicParsing="false" text="9" onAction="#devet"
+        <Button fx:id="btn9" maxWidth="Infinity" mnemonicParsing="false" text="9" onAction="#broj"
                 GridPane.columnIndex="2" GridPane.rowIndex="2"/>
-        <Button fx:id="btn4" maxWidth="Infinity" mnemonicParsing="false" text="4" onAction="#cetiri"
+        <Button fx:id="btn4" maxWidth="Infinity" mnemonicParsing="false" text="4" onAction="#broj"
                 GridPane.columnIndex="0" GridPane.rowIndex="3"/>
-        <Button fx:id="btn5" maxWidth="Infinity" mnemonicParsing="false" text="5" onAction="#pet"
+        <Button fx:id="btn5" maxWidth="Infinity" mnemonicParsing="false" text="5" onAction="#broj"
                 GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-        <Button fx:id="btn6" maxWidth="Infinity" mnemonicParsing="false" text="6" onAction="#sest"
+        <Button fx:id="btn6" maxWidth="Infinity" mnemonicParsing="false" text="6" onAction="#broj"
                 GridPane.columnIndex="2" GridPane.rowIndex="3"/>
-        <Button fx:id="btn1" maxWidth="Infinity" mnemonicParsing="false" text="1" onAction="#jedan"
+        <Button fx:id="btn1" maxWidth="Infinity" mnemonicParsing="false" text="1" onAction="#broj"
                 GridPane.columnIndex="0" GridPane.rowIndex="4"/>
-        <Button fx:id="btn2" maxWidth="Infinity" mnemonicParsing="false" text="2" onAction="#dva"
+        <Button fx:id="btn2" maxWidth="Infinity" mnemonicParsing="false" text="2" onAction="#broj"
                 GridPane.columnIndex="1" GridPane.rowIndex="4"/>
-        <Button fx:id="btn3" maxWidth="Infinity" mnemonicParsing="false" text="3" onAction="#tri"
+        <Button fx:id="btn3" maxWidth="Infinity" mnemonicParsing="false" text="3" onAction="#broj"
                 GridPane.columnIndex="2" GridPane.rowIndex="4"/>
         <Button fx:id="dotBtn" maxWidth="Infinity" mnemonicParsing="false" text="." onAction="#zarez"
                 GridPane.columnIndex="2" GridPane.rowIndex="5"/>
-        <Button fx:id="btn0" maxWidth="Infinity" mnemonicParsing="false" text="0" onAction="#nula"
+        <Button fx:id="btn0" maxWidth="Infinity" mnemonicParsing="false" text="0" onAction="#broj"
                 GridPane.columnSpan="2" GridPane.rowIndex="5"/>
         <Button fx:id="plusBtn" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" text="+"
                 onAction="#plus" GridPane.columnIndex="3"
