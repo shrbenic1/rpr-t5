@@ -17,6 +17,7 @@ public class Controller {
     private double kolicnik = 1;
     private String operacija = "";
     private boolean brisi = false;
+    private boolean bilaOperacija = false;
 
     public Controller() {
         ulaz = new SimpleStringProperty("0");
@@ -38,7 +39,10 @@ public class Controller {
             brisi = !brisi;
         } else if (!operacija.equals("")) {
             ulaz.set(ulaz.get() + ((Button)actionEvent.getSource()).getText());
-        } else {
+        } else if(bilaOperacija) {
+            ulaz.set(((Button)actionEvent.getSource()).getText());
+        }
+        else {
             ulaz.set(ulaz.get() + ((Button)actionEvent.getSource()).getText());
         }
     }
@@ -99,15 +103,19 @@ public class Controller {
                 umnozak = 1;
                 break;
             case "/":
-                ulaz.set(String.valueOf((kolicnik / Double.parseDouble(ulaz.get()))));
-                operacija = "";
-                kolicnik = 1;
+                if(ulaz.get().equals("0")) {
+                    ulaz.set("E");
+                } else {
+                    ulaz.set(String.valueOf((kolicnik / Double.parseDouble(ulaz.get()))));
+                    operacija = "";
+                    kolicnik = 1;
+                }
                 break;
             case "%":
                 ulaz.set(String.valueOf(Double.parseDouble(ulaz.get()) * 0.01));
                 operacija = "";
                 break;
         }
-
+        bilaOperacija = true;
     }
 }

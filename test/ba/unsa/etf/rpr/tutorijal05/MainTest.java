@@ -27,9 +27,72 @@ class MainTest {
     }
 
     @Test
+    public void timesThree(FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btntimes");
+        robot.clickOn("#btn3");
+        robot.clickOn("#equalsBtn");
+        assertEquals("0.0", display.getText());
+    }
+
+    @Test
+    public void differencePositive(FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn5");
+        robot.clickOn("#minusBtn");
+        robot.clickOn("#btn2");
+        robot.clickOn("#equalsBtn");
+        assertEquals("3.0", display.getText());
+    }
+
+    @Test
+    public void differenceNegattive(FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn5");
+        robot.clickOn("#minusBtn");
+        robot.clickOn("#btn6");
+        robot.clickOn("#equalsBtn");
+        assertEquals("-1.0", display.getText());
+    }
+
+    @Test
     public void startWithZero(FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         assertEquals("0", display.getText());
+    }
+
+    @Test
+    public void times(FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn5");
+        robot.clickOn("#btntimes");
+        robot.clickOn("#btn2");
+        robot.clickOn("#equalsBtn");
+        assertEquals("10.0", display.getText());
+    }
+
+    @Test
+    public void multipleTimes(FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn5");
+        robot.clickOn("#btntimes");
+        robot.clickOn("#btn2");
+        robot.clickOn("#equalsBtn");
+        assertEquals("10.0", display.getText());
+        robot.clickOn("#btntimes");
+        robot.clickOn("#btn3");
+        robot.clickOn("#equalsBtn");
+        assertEquals("30.0", display.getText());
+    }
+
+    @Test
+    public void zeroDivide(FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn5");
+        robot.clickOn("#btndivide");
+        robot.clickOn("#btn0");
+        robot.clickOn("#equalsBtn");
+        assertEquals("E", display.getText());
     }
 
     @Test
