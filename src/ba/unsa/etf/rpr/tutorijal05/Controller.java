@@ -80,31 +80,33 @@ public class Controller {
     }
 
     public void jednako(ActionEvent actionEvent) {
-        if (operacija.equals("+")) {
-            ulaz.set(String.valueOf((Double.parseDouble(ulaz.get()) + zbroj)));
-            operacija = "";
-            zbroj = 0;
-        }
-        else if (operacija.equals("-")) {
-            if(razlika - Double.parseDouble(ulaz.get()) - (int) (razlika - Double.parseDouble(ulaz.get())) == 0)
-            ulaz.set(String.valueOf((razlika - Integer.parseInt(ulaz.get()))));
-            else ulaz.set(String.valueOf((razlika - Double.parseDouble(ulaz.get()))));
-            operacija = "";
-            razlika = 0;
-        }
-        else if (operacija.equals("*")) {
-            ulaz.set(String.valueOf((Double.parseDouble(ulaz.get()) * umnozak)));
-            operacija = "";
-            umnozak = 1;
-        }
-        else if (operacija.equals("/")) {
-            ulaz.set(String.valueOf((kolicnik / Double.parseDouble(ulaz.get()))));
-            operacija = "";
-            kolicnik = 1;
-        }
-        else if (operacija.equals("%")) {
-            ulaz.set(String.valueOf(Double.parseDouble(ulaz.get()) * 0.01));
-            operacija = "";
+        switch (operacija) {
+            case "+":
+                ulaz.set(String.valueOf((Double.parseDouble(ulaz.get()) + zbroj)));
+                operacija = "";
+                zbroj = 0;
+                break;
+            case "-":
+                if (razlika - Double.parseDouble(ulaz.get()) - (int) (razlika - Double.parseDouble(ulaz.get())) == 0)
+                    ulaz.set(String.valueOf((razlika - Integer.parseInt(ulaz.get()))));
+                else ulaz.set(String.valueOf((razlika - Double.parseDouble(ulaz.get()))));
+                operacija = "";
+                razlika = 0;
+                break;
+            case "*":
+                ulaz.set(String.valueOf((Double.parseDouble(ulaz.get()) * umnozak)));
+                operacija = "";
+                umnozak = 1;
+                break;
+            case "/":
+                ulaz.set(String.valueOf((kolicnik / Double.parseDouble(ulaz.get()))));
+                operacija = "";
+                kolicnik = 1;
+                break;
+            case "%":
+                ulaz.set(String.valueOf(Double.parseDouble(ulaz.get()) * 0.01));
+                operacija = "";
+                break;
         }
 
     }
