@@ -36,10 +36,10 @@
         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
     </padding>
     <children>
-        <Button maxWidth="Infinity" mnemonicParsing="false" text="\%" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-        <Button maxWidth="Infinity" mnemonicParsing="false" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-        <Button maxWidth="Infinity" mnemonicParsing="false" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
-        <Button fx:id="minusBtn" maxWidth="Infinity" mnemonicParsing="false" text="-" GridPane.columnIndex="3"
+        <Button maxWidth="Infinity" mnemonicParsing="false" text="\%" onAction="#posto" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Button maxWidth="Infinity" mnemonicParsing="false" text="/" onAction="#dijeljenje" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button maxWidth="Infinity" mnemonicParsing="false" text="x" onAction="#puta" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Button fx:id="minusBtn" maxWidth="Infinity" mnemonicParsing="false" text="-" onAction="#minus" GridPane.columnIndex="3"
                 GridPane.rowIndex="1"/>
         <Button fx:id="btn7" maxWidth="Infinity" mnemonicParsing="false" text="7" onAction="#broj"
                 GridPane.columnIndex="0" GridPane.rowIndex="2"/>
@@ -69,7 +69,7 @@
         <Button fx:id="equalsBtn" id="equalsBtn" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false"
                 text="=" onAction="#jednako"
                 GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2"/>
-        <Label fx:id="display" id="display" maxWidth="Infinity" prefHeight="30.0" text="${controller.ulaz}"
+        <Label fx:id="display" id="display" textAlignment="RIGHT" maxWidth="Infinity" prefHeight="30.0" text="${controller.ulaz}"
                GridPane.columnIndex="0"
                GridPane.columnSpan="4" GridPane.rowIndex="0"/>
     </children>
